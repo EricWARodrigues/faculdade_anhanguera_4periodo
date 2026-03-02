@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DriveNow | Locação de Carros</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container header__content">
+      <a class="logo" href="#">
+        <span class="logo__mark">DN</span>
+        <span class="logo__text">DriveNow</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
+        ☰
+      </button>
+
+      <nav class="nav" id="nav">
+        <a href="#carros">Carros</a>
+        <a href="#beneficios">Benefícios</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <main>
+    <section class="hero">
+      <div class="container hero__content">
+        <div class="hero__text">
+          <h1>Alugue um carro em minutos.</h1>
+          <p>Planos flexíveis, carros revisados e retirada rápida. Tudo com uma experiência responsiva, do mobile ao desktop.</p>
+          <a class="btn btn--primary" href="#carros">Ver carros disponíveis</a>
+        </div>
+
+        <div class="hero__card">
+          <h2>Simulação rápida</h2>
+          <p class="muted">Escolha um carro e reserve com 2 cliques.</p>
+          <div class="hero__badges">
+            <span class="badge">Seguro opcional</span>
+            <span class="badge">Sem burocracia</span>
+            <span class="badge">Suporte 24/7</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FILTROS -->
+    <section class="filters" id="carros">
+      <div class="container filters__content">
+        <div>
+          <h2>Carros disponíveis</h2>
+          <p class="muted">Filtre por categoria ou busque pelo nome.</p>
+        </div>
+
+        <div class="filters__actions">
+          <label class="field">
+            <span class="field__label">Categoria</span>
+            <select id="categorySelect">
+              <option value="all">Todas</option>
+            </select>
+          </label>
+
+          <label class="field">
+            <span class="field__label">Buscar</span>
+            <input id="searchInput" type="search" placeholder="Ex.: Onix, Corolla..." />
+          </label>
+        </div>
+      </div>
+    </section>
+
+    <!-- GRID DE CARROS -->
+    <section class="cars">
+      <div class="container">
+        <div class="cars__grid" id="carsGrid">
+          <!-- cards entram via JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- BENEFÍCIOS -->
+    <section class="benefits" id="beneficios">
+      <div class="container benefits__grid">
+        <div class="benefit">
+          <h3>Retirada rápida</h3>
+          <p>Processo enxuto: dados essenciais e pronto.</p>
+        </div>
+        <div class="benefit">
+          <h3>Frota revisada</h3>
+          <p>Manutenção em dia, limpeza e checklist.</p>
+        </div>
+        <div class="benefit">
+          <h3>Preço transparente</h3>
+          <p>Sem pegadinhas: diária + extras opcionais.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" id="contato">
+    <div class="container footer__content">
+      <div>
+        <strong>DriveNow</strong>
+        <p class="muted">Projeto didático para responsividade (HTML/CSS/JS).</p>
+      </div>
+      <div class="footer__links">
+        <a href="#">Políticas</a>
+        <a href="#">Suporte</a>
+        <a href="#">WhatsApp</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MODAL -->
+  <div class="modal" id="modal" aria-hidden="true" role="dialog" aria-label="Reservar carro">
+    <div class="modal__overlay" id="modalOverlay"></div>
+    <div class="modal__content">
+      <div class="modal__header">
+        <h3 id="modalTitle">Reservar</h3>
+        <button class="icon-btn" id="closeModal" aria-label="Fechar modal">✕</button>
+      </div>
+
+      <div class="modal__body">
+        <p class="muted" id="modalDesc"></p>
+
+        <div class="modal__form">
+          <label class="field">
+            <span class="field__label">Dias</span>
+            <input id="daysInput" type="number" min="1" value="1" />
+          </label>
+
+          <label class="field">
+            <span class="field__label">Seguro (opcional)</span>
+            <select id="insuranceSelect">
+              <option value="0">Sem seguro</option>
+              <option value="29">Básico (+R$ 29/dia)</option>
+              <option value="49">Premium (+R$ 49/dia)</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="modal__summary">
+          <span>Total estimado</span>
+          <strong id="totalPrice">R$ 0,00</strong>
+        </div>
+
+        <button class="btn btn--primary btn--full" id="confirmReserve">Confirmar reserva</button>
+        <p class="muted small">*Simulação didática: não envia dados.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
