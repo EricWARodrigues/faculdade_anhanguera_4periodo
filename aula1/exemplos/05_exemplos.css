@@ -1,0 +1,16 @@
+/*Exemplos apresentados nas aulas*/
+
+/* Exemplo de media query para dispositivos móveis */
+@media only screen and (max-width: 600px) {
+  /* Estilos para dispositivos móveis */
+  body {
+    font-size: 14px;
+  }
+}
+
+/* Estilo para tornar imagens responsivas */
+img {
+  max-width: 100%;
+  height: auto;
+}
+

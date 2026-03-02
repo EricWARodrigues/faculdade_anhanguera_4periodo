@@ -1,0 +1,16 @@
+body {
+  scroll-behavior: smooth;
+}
+
+section {
+  min-height: 100vh;
+}
+
+#sobre img {
+  max-width: 220px;
+}
+
+footer a:hover {
+  color: #adb5bd;
+  text-decoration: none;
+}

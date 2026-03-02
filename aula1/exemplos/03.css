@@ -1,0 +1,48 @@
+#main-header {
+
+    background-color: black;
+
+    color: white;
+
+    padding: 20px;
+
+    text-align: center;
+
+}
+
+h2, h3 {
+
+    color: navy;
+
+    font-family: Arial, sans-serif;
+
+    margin-bottom: 10px;
+
+}
+
+/* Estilos para telas com largura máxima de 600px */
+@media (max-width: 600px) {
+    p {
+        font-size: 14px;
+        color: blue;
+        border-color: blue;
+    }
+}
+
+/* Estilos para telas com largura entre 601px e 1200px - gerado pelo VSC
+@media (min-width: 601px) and (max-width: 1200px) {
+    p {
+        font-size: 18px;
+        color: green;
+        border-color: green;
+    }
+} */
+
+/* Estilos para telas com largura mínima de 601px */
+@media (min-width: 601px) {
+    p {
+        font-size: 18px;
+        color: green;
+        border-color: green;
+    }
+}

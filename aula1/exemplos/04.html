@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Site Responsivo</title>
+  <link rel="stylesheet" href="04.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">Sobre</a></li>
+        <li><a href="#anotations">Anotações</a></li>
+        <li><a href="#services">Serviços</a></li>
+        <li><a href="#contact">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="home">
+      <h1>Bem vindo ao meu site</h1>
+    </section>
+    <picture>
+      <source media="(max-width: 600px)" srcset="04small.png">
+      <source media="(min-width: 601px) and (max-width: 1200px)" srcset="04medium.png">
+      <img src="04large.png" alt="Imagem Responsiva">
+    </picture>
+    <section id="about">
+      <h2>Sobre Mim</h2>
+      <p>Olá! Sou um desenvolvedor apaixonado por criar soluções web inovadoras e responsivas.</p>
+    </section>
+    <section id="anotations">
+      <h2>Anotações</h2>
+      <h3>Principais vantagens de ter um sistema responsivo</h3>
+      <h4>Para a equipe de desenvolvimento:</h4>
+      <ul>
+        <li><strong>Manutenção simplificada:</strong> com um único código base para todos os dispositivos, a manutenção e atualização do site são mais fáceis e eficientes.</li>
+        <li><strong>Consistência de design:</strong> um design responsivo garante que a aparência e a funcionalidade do site sejam consistentes em todas as plataformas, facilitando o desenvolvimento de novas funcionalidades e correções.</li>
+        <li><strong>SEO melhorado:</strong> motores de busca, como o Google, favorecem sites responsivos, melhorando a visibilidade e o ranking nos resultados de pesquisa.</li>
+        <li><strong>Custo-efetividade:</strong> desenvolver e manter um site responsivo é mais econômico do que criar versões separadas para desktop e dispositivos móveis.</li>
+      </ul>
+      <h4>Para o usuário final:</h4>
+      <ul>
+        <li><strong>Experiência de usuário melhorada:</strong> um site responsivo adapta-se automaticamente ao dispositivo do usuário, proporcionando uma navegação mais agradável e intuitiva.</li>
+        <li><strong>Acessibilidade aumentada:</strong> usuários podem acessar o site de qualquer dispositivo, a qualquer momento, sem comprometer a funcionalidade ou a estética.</li>
+        <li><strong>Redução na taxa de rejeição:</strong> com uma melhor experiência de usuário, é menos provável que os visitantes abandonem o site rapidamente.</li>
+        <li><strong>Maior alcance e engajamento:</strong> a capacidade de alcançar usuários em diversos dispositivos aumenta o engajamento e potencialmente a conversão de vissitantes em clientes.</li>
+      </ul>
+      <h3>Ferramentas indicadas para desenvolvimento responsivo</h3>
+      <ol>
+        <li>
+          <strong>Bootstrap</strong>
+          um dos frameworks CSS mais populares para o desenvolvimento de sites responsivos.
+          <ul>
+            <li>Principais características: oferece um sistema de grid flexível, componentes predefinidos e utilitários CSS para criar rapidamente layouts responsivos. Suporta customização extensiva através de variáveis SASS.</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Foundation</strong>
+          um framework front-end avançado, conhecido por sua flexibilidade e capacidade de personalização.
+          <ul>
+            <li>Principais características: inclui um sistema de grid altamente personalizável, componentes modulares e utilitários CSS, além de suportar media queries semânticas.</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Visual Studio Code</strong>
+          um editor de código-fonte poderoso e extensível, amplamente utilizado para desenvolvimento web.
+          <ul>
+            <li>Principais características: suporte a uma vasta gama de extensões que melhoram o desenvolvimento responsivo, como emuladores de dispositivo, pré-visualização em tempo real, e integração com ferramentas de depuração e controle de versão.</li>
+          </ul>
+        </li>
+      </ol>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2026 Meu Site Responsivo. Todos os direitos reservados.</p>
+  </footer>
+  
+</body>
+</html>
